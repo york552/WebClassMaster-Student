@@ -1,0 +1,111 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - AgoraEduSDK (1.0.0):
+    - AFNetworking (= 4.0.1)
+    - AgoraEduSDK/AgoraALL (= 1.0.0)
+    - AgoraRtcEngine_iOS (= 2.9.0.107)
+    - AgoraRtm_iOS (= 1.4.1)
+    - AliyunOSSiOS (= 2.10.8)
+    - CocoaLumberjack (= 3.6.1)
+    - Whiteboard (= 2.9.14)
+  - AgoraEduSDK/AgoraALL (1.0.0):
+    - AFNetworking (= 4.0.1)
+    - AgoraRtcEngine_iOS (= 2.9.0.107)
+    - AgoraRtm_iOS (= 1.4.1)
+    - AliyunOSSiOS (= 2.10.8)
+    - CocoaLumberjack (= 3.6.1)
+    - Whiteboard (= 2.9.14)
+  - AgoraRtcEngine_iOS (2.9.0.107)
+  - AgoraRtm_iOS (1.4.1)
+  - AliyunOSSiOS (2.10.8)
+  - BmobSDK (2.4.1)
+  - CocoaLumberjack (3.6.1):
+    - CocoaLumberjack/Core (= 3.6.1)
+  - CocoaLumberjack/Core (3.6.1)
+  - dsBridge (3.0.6)
+  - LookinServer (1.0.0)
+  - LxTabBarController (1.0.0)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - Whiteboard (2.9.14):
+    - Whiteboard/Base (= 2.9.14)
+    - Whiteboard/Converter (= 2.9.14)
+    - Whiteboard/NativeReplayer (= 2.9.14)
+    - Whiteboard/Object (= 2.9.14)
+    - Whiteboard/Replayer (= 2.9.14)
+    - Whiteboard/Room (= 2.9.14)
+  - Whiteboard/Base (2.9.14):
+    - dsBridge (~> 3.0.2)
+    - Whiteboard/Object
+  - Whiteboard/Converter (2.9.14):
+    - Whiteboard/Object
+  - Whiteboard/NativeReplayer (2.9.14):
+    - Whiteboard/Replayer
+  - Whiteboard/Object (2.9.14):
+    - YYModel (~> 1.0.4)
+  - Whiteboard/Replayer (2.9.14):
+    - Whiteboard/Base
+  - Whiteboard/Room (2.9.14):
+    - Whiteboard/Base
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - AFNetworking
+  - AgoraEduSDK
+  - BmobSDK
+  - LookinServer
+  - LxTabBarController (~> 1.0.0)
+  - Masonry
+  - MBProgressHUD (~> 1.2.0)
+  - YYModel
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - AgoraEduSDK
+    - AgoraRtcEngine_iOS
+    - AgoraRtm_iOS
+    - AliyunOSSiOS
+    - BmobSDK
+    - CocoaLumberjack
+    - dsBridge
+    - LookinServer
+    - LxTabBarController
+    - Masonry
+    - MBProgressHUD
+    - Whiteboard
+    - YYModel
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  AgoraEduSDK: bb00bfef6f7cca68584faea69495cbce563494cc
+  AgoraRtcEngine_iOS: f295cc362f18a98a59464c7485a1de1dad4847f2
+  AgoraRtm_iOS: 3a5b675487b39e51f416e8c8a040f97f0aaad2c1
+  AliyunOSSiOS: 8db92936545593b9e5c66d680ef2ac0738946651
+  BmobSDK: 930525437e6602f7146108e11a9796604a1edbb9
+  CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
+  dsBridge: 48b62ee8a411ad601a88d6f6c8cf6cb634b206b7
+  LookinServer: 0002891cd3cec5e082a910e897dfe71b4f06b89e
+  LxTabBarController: 47773fa57189cb83835c119cc7a82c112565f33b
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  Whiteboard: edbe3ed753dc9a457a38718834d7bf16fdfd3980
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: ecf6e2c7da7ae7e3495852bb64f4acd16a9a2e9e
+
+COCOAPODS: 1.10.1
