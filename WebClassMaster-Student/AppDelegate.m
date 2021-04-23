@@ -8,9 +8,6 @@
 #import "AppDelegate.h"
 #import "MainTabBarController.h"
 #import <BmobSDK/Bmob.h>
-#import "ClassroomNavigationController.h"
-#import "EntryRoomController.h"
-
 @interface AppDelegate ()
 @end
 
@@ -24,7 +21,7 @@
 
     MainTabBarController * tabBarController = [[MainTabBarController alloc]init];
         
-    self.window.rootViewController = [[EntryRoomController alloc] init];// [[ClassroomNavigationController alloc] initWithRootViewController:[EntryRoomController new]];
+    self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
 }

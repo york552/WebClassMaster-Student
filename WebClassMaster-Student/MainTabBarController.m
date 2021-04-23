@@ -8,25 +8,28 @@
 #import "MainTabBarController.h"
 #import "EntryRoomController.h"
 #import "ClassroomNavigationController.h"
+#import "SettingMainController.h"
 
 @interface MainTabBarController ()
 @property (nonatomic, strong) UIWindow *classroomWindow;
 @property (nonatomic, strong) ClassroomNavigationController *nav1;
 @property (nonatomic, strong) UIViewController *vc2;
-@property (nonatomic, strong) UIViewController *vc3;
-@property (nonatomic, strong) UIViewController *vc4;
+@property (nonatomic, strong) UINavigationController *nav3;
+@property (nonatomic, strong) SettingMainController *vc3;
 @end
 
 @implementation MainTabBarController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    NSString *librayPath = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES).firstObject;
+//    NSLog(@"libraryPath:%@",librayPath);
     [self setUI];
 }
 
 // MARK:UI
 - (void)setUI{
-    self.viewControllers = @[self.nav1,self.vc2,self.vc3,self.vc4];
+    self.viewControllers = @[self.nav1,self.vc2,self.nav3];
     self.tabBar.tintColor = UIColor.blackColor;
 }
 
@@ -48,21 +51,13 @@
     }
     return _vc2;
 }
-- (UIViewController *)vc3{
-    if (!_vc3) {
-        _vc3 = [[UIViewController alloc]init];
-        _vc3.tabBarItem.image = [UIImage imageNamed:@"Main_student"];
-        _vc3.tabBarItem.title = @"学生";
+- (UINavigationController *)nav3{
+    if (!_nav3) {
+        _nav3 = [[UINavigationController alloc]initWithRootViewController:[[SettingMainController alloc]init]];
+        _nav3.tabBarItem.image = [UIImage imageNamed:@"Set_tabIcon"];
+        _nav3.tabBarItem.title = @"设置";
     }
-    return _vc3;
-}
-- (UIViewController *)vc4{
-    if (!_vc4) {
-        _vc4 = [[UIViewController alloc]init];
-        _vc4.tabBarItem.image = [UIImage imageNamed:@"Main_student"];
-        _vc4.tabBarItem.title = @"学生";
-    }
-    return _vc4;
+    return _nav3;
 }
 
 @end

@@ -13,6 +13,7 @@ target 'WebClassMaster-Student' do
   pod 'Masonry'
   pod 'AFNetworking'
   pod 'YYModel'
+  pod 'YYKit'
   pod 'BmobSDK'
   pod 'LookinServer', :configurations => ['Debug']
   
