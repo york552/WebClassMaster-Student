@@ -18,7 +18,6 @@
 		CF4AE3BA26301FCF00FC3C11 /* ClassRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4AE3B326301FCF00FC3C11 /* ClassRoomViewController.m */; };
 		CF4AE3BB26301FCF00FC3C11 /* ClassroomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4AE3B826301FCF00FC3C11 /* ClassroomModel.m */; };
 		CF4AE3C02630200F00FC3C11 /* YKTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4AE3BF2630200F00FC3C11 /* YKTool.m */; };
-		CF4AE3D7263121E600FC3C11 /* ClassroomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4AE3D6263121E600FC3C11 /* ClassroomNavigationController.m */; };
 		CF4AE3E02631598200FC3C11 /* SettingMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4AE3DF2631598200FC3C11 /* SettingMainController.m */; };
 		CF4AE3E526315A6600FC3C11 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4AE3E426315A6600FC3C11 /* UIColor+Hex.m */; };
 		CF4AE3E92631766900FC3C11 /* EyesProtectViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4AE3E82631766900FC3C11 /* EyesProtectViewCell.m */; };
@@ -27,6 +26,9 @@
 		CF4AE4092632A64200FC3C11 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4AE4082632A64200FC3C11 /* LoginViewController.m */; };
 		CF4AE4202632C1D800FC3C11 /* MineDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4AE41F2632C1D700FC3C11 /* MineDetailViewController.m */; };
 		CF4AE4242632C2C800FC3C11 /* MineDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4AE4232632C2C800FC3C11 /* MineDetailTableViewCell.m */; };
+		CF4AE4C62632F19600FC3C11 /* ClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4AE4C52632F19600FC3C11 /* ClassViewController.m */; };
+		CF4AE68C263558CE00FC3C11 /* ChooseClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4AE68B263558CE00FC3C11 /* ChooseClassViewController.m */; };
+		CF4AE690263558DF00FC3C11 /* ClassInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4AE68F263558DF00FC3C11 /* ClassInfoViewController.m */; };
 		EB2AFAD2CF53E4C90974D724 /* Pods_WebClassMaster_Student.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE851784C7FFB95AF06D377 /* Pods_WebClassMaster_Student.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,8 +55,6 @@
 		CF4AE3B826301FCF00FC3C11 /* ClassroomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassroomModel.m; sourceTree = "<group>"; };
 		CF4AE3BE2630200F00FC3C11 /* YKTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKTool.h; sourceTree = "<group>"; };
 		CF4AE3BF2630200F00FC3C11 /* YKTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKTool.m; sourceTree = "<group>"; };
-		CF4AE3D5263121E600FC3C11 /* ClassroomNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassroomNavigationController.h; sourceTree = "<group>"; };
-		CF4AE3D6263121E600FC3C11 /* ClassroomNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassroomNavigationController.m; sourceTree = "<group>"; };
 		CF4AE3DE2631598200FC3C11 /* SettingMainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingMainController.h; sourceTree = "<group>"; };
 		CF4AE3DF2631598200FC3C11 /* SettingMainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingMainController.m; sourceTree = "<group>"; };
 		CF4AE3E326315A6600FC3C11 /* UIColor+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
@@ -71,6 +71,12 @@
 		CF4AE41F2632C1D700FC3C11 /* MineDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineDetailViewController.m; sourceTree = "<group>"; };
 		CF4AE4222632C2C800FC3C11 /* MineDetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineDetailTableViewCell.h; sourceTree = "<group>"; };
 		CF4AE4232632C2C800FC3C11 /* MineDetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineDetailTableViewCell.m; sourceTree = "<group>"; };
+		CF4AE4C42632F19600FC3C11 /* ClassViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassViewController.h; sourceTree = "<group>"; };
+		CF4AE4C52632F19600FC3C11 /* ClassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassViewController.m; sourceTree = "<group>"; };
+		CF4AE68A263558CE00FC3C11 /* ChooseClassViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChooseClassViewController.h; sourceTree = "<group>"; };
+		CF4AE68B263558CE00FC3C11 /* ChooseClassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseClassViewController.m; sourceTree = "<group>"; };
+		CF4AE68E263558DF00FC3C11 /* ClassInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassInfoViewController.h; sourceTree = "<group>"; };
+		CF4AE68F263558DF00FC3C11 /* ClassInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassInfoViewController.m; sourceTree = "<group>"; };
 		DDE851784C7FFB95AF06D377 /* Pods_WebClassMaster_Student.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebClassMaster_Student.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -117,6 +123,7 @@
 			children = (
 				CF4AE3BD2630200F00FC3C11 /* Tool */,
 				CF4AE3B026301FCF00FC3C11 /* Classroom */,
+				CF4AE4C32632F07800FC3C11 /* Replay */,
 				CF4AE3D92631591B00FC3C11 /* Setting */,
 				CF4AE37A2630186500FC3C11 /* AppDelegate.h */,
 				CF4AE37B2630186500FC3C11 /* AppDelegate.m */,
@@ -149,8 +156,6 @@
 				CF4AE3B226301FCF00FC3C11 /* EntryRoomController.m */,
 				CF4AE3B426301FCF00FC3C11 /* ClassRoomViewController.h */,
 				CF4AE3B326301FCF00FC3C11 /* ClassRoomViewController.m */,
-				CF4AE3D5263121E600FC3C11 /* ClassroomNavigationController.h */,
-				CF4AE3D6263121E600FC3C11 /* ClassroomNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -179,7 +184,6 @@
 			isa = PBXGroup;
 			children = (
 				CF4AE3DD2631594400FC3C11 /* View */,
-				CF4AE3DB2631593600FC3C11 /* Model */,
 				CF4AE3DA2631592F00FC3C11 /* Controller */,
 			);
 			path = Setting;
@@ -202,13 +206,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		CF4AE3DB2631593600FC3C11 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		CF4AE3DD2631594400FC3C11 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +215,27 @@
 				CF4AE4232632C2C800FC3C11 /* MineDetailTableViewCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CF4AE4C32632F07800FC3C11 /* Replay */ = {
+			isa = PBXGroup;
+			children = (
+				CF4AE4C92632F1A300FC3C11 /* Controller */,
+			);
+			path = Replay;
+			sourceTree = "<group>";
+		};
+		CF4AE4C92632F1A300FC3C11 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF4AE4C42632F19600FC3C11 /* ClassViewController.h */,
+				CF4AE4C52632F19600FC3C11 /* ClassViewController.m */,
+				CF4AE68A263558CE00FC3C11 /* ChooseClassViewController.h */,
+				CF4AE68B263558CE00FC3C11 /* ChooseClassViewController.m */,
+				CF4AE68E263558DF00FC3C11 /* ClassInfoViewController.h */,
+				CF4AE68F263558DF00FC3C11 /* ClassInfoViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		E6DD26D891B3B25E3AD0A1E0 /* Pods */ = {
@@ -241,7 +259,7 @@
 				CF4AE3742630186500FC3C11 /* Frameworks */,
 				CF4AE3752630186500FC3C11 /* Resources */,
 				DB7E7E6B1139484F1243BBB3 /* [CP] Embed Pods Frameworks */,
-				FA59E8063EE1563B57F44113 /* [CP] Copy Pods Resources */,
+				98AC6823CBD81126CAA55B81 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -319,6 +337,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		98AC6823CBD81126CAA55B81 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebClassMaster-Student/Pods-WebClassMaster-Student-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebClassMaster-Student/Pods-WebClassMaster-Student-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebClassMaster-Student/Pods-WebClassMaster-Student-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DB7E7E6B1139484F1243BBB3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -336,23 +371,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebClassMaster-Student/Pods-WebClassMaster-Student-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FA59E8063EE1563B57F44113 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WebClassMaster-Student/Pods-WebClassMaster-Student-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WebClassMaster-Student/Pods-WebClassMaster-Student-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebClassMaster-Student/Pods-WebClassMaster-Student-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -365,17 +383,19 @@
 				CF4AE3E02631598200FC3C11 /* SettingMainController.m in Sources */,
 				CF4AE3EE2631A07000FC3C11 /* AdviceViewController.m in Sources */,
 				CF4AE3B926301FCF00FC3C11 /* EntryRoomController.m in Sources */,
-				CF4AE3D7263121E600FC3C11 /* ClassroomNavigationController.m in Sources */,
 				CF4AE4242632C2C800FC3C11 /* MineDetailTableViewCell.m in Sources */,
 				CF4AE40526327C1E00FC3C11 /* ChangePasswordViewController.m in Sources */,
 				CF4AE3BB26301FCF00FC3C11 /* ClassroomModel.m in Sources */,
 				CF4AE3BA26301FCF00FC3C11 /* ClassRoomViewController.m in Sources */,
 				CF4AE3E92631766900FC3C11 /* EyesProtectViewCell.m in Sources */,
+				CF4AE4C62632F19600FC3C11 /* ClassViewController.m in Sources */,
 				CF4AE37C2630186500FC3C11 /* AppDelegate.m in Sources */,
+				CF4AE68C263558CE00FC3C11 /* ChooseClassViewController.m in Sources */,
 				CF4AE3C02630200F00FC3C11 /* YKTool.m in Sources */,
 				CF4AE3E526315A6600FC3C11 /* UIColor+Hex.m in Sources */,
 				CF4AE3AE263019C100FC3C11 /* MainTabBarController.m in Sources */,
 				CF4AE38D2630186700FC3C11 /* main.m in Sources */,
+				CF4AE690263558DF00FC3C11 /* ClassInfoViewController.m in Sources */,
 				CF4AE4092632A64200FC3C11 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

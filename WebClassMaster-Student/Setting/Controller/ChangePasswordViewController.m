@@ -49,7 +49,7 @@
 - (UITextField *)password {
     if (!_password) {
         _password = [[UITextField alloc]initWithFrame:CGRectMake(30, self.navigationController.navigationBar.frame.size.height + [[UIApplication sharedApplication] statusBarFrame].size.height + 102, self.view.frame.size.width - 60, 40)];
-        _password.placeholder = @"请输入旧密码";
+        _password.placeholder = @"请输入新密码";
         _password.layer.cornerRadius = 8;
         _password.backgroundColor = UIColor.whiteColor;
         _password.layer.masksToBounds = YES;

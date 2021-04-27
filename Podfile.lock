@@ -14,15 +14,15 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - AgoraEduSDK (1.0.0):
+  - AgoraEduSDK (1.0.1):
     - AFNetworking (= 4.0.1)
-    - AgoraEduSDK/AgoraALL (= 1.0.0)
+    - AgoraEduSDK/AgoraALL (= 1.0.1)
     - AgoraRtcEngine_iOS (= 2.9.0.107)
     - AgoraRtm_iOS (= 1.4.1)
     - AliyunOSSiOS (= 2.10.8)
     - CocoaLumberjack (= 3.6.1)
     - Whiteboard (= 2.9.14)
-  - AgoraEduSDK/AgoraALL (1.0.0):
+  - AgoraEduSDK/AgoraALL (1.0.1):
     - AFNetworking (= 4.0.1)
     - AgoraRtcEngine_iOS (= 2.9.0.107)
     - AgoraRtm_iOS (= 1.4.1)
@@ -37,6 +37,8 @@ PODS:
     - CocoaLumberjack/Core (= 3.6.1)
   - CocoaLumberjack/Core (3.6.1)
   - dsBridge (3.0.6)
+  - JXCategoryView (1.5.8)
+  - JXPagingView/Pager (2.0.13)
   - LookinServer (1.0.0)
   - LxTabBarController (1.0.0)
   - Masonry (1.1.0)
@@ -68,8 +70,10 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
-  - AgoraEduSDK
+  - AgoraEduSDK (= 1.0.1)
   - BmobSDK
+  - JXCategoryView
+  - JXPagingView/Pager
   - LookinServer
   - LxTabBarController (~> 1.0.0)
   - Masonry
@@ -87,6 +91,8 @@ SPEC REPOS:
     - BmobSDK
     - CocoaLumberjack
     - dsBridge
+    - JXCategoryView
+    - JXPagingView
     - LookinServer
     - LxTabBarController
     - Masonry
@@ -97,13 +103,15 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  AgoraEduSDK: bb00bfef6f7cca68584faea69495cbce563494cc
+  AgoraEduSDK: 9166d4e77855d7938a780c13f3bd76066ba61f86
   AgoraRtcEngine_iOS: f295cc362f18a98a59464c7485a1de1dad4847f2
   AgoraRtm_iOS: 3a5b675487b39e51f416e8c8a040f97f0aaad2c1
   AliyunOSSiOS: 8db92936545593b9e5c66d680ef2ac0738946651
   BmobSDK: 930525437e6602f7146108e11a9796604a1edbb9
   CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
   dsBridge: 48b62ee8a411ad601a88d6f6c8cf6cb634b206b7
+  JXCategoryView: 778a620f76070d6598fd8d7239991b8da8326170
+  JXPagingView: 821ed274f09eaf2843a96c3a74e9d138e27d9730
   LookinServer: 0002891cd3cec5e082a910e897dfe71b4f06b89e
   LxTabBarController: 47773fa57189cb83835c119cc7a82c112565f33b
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
@@ -112,6 +120,6 @@ SPEC CHECKSUMS:
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 2db755c8d4c1aa4f3dc9d5f6f6bb280a6c1da679
+PODFILE CHECKSUM: 7fa0989d4b83e62a964117c152eb66dac5986add
 
 COCOAPODS: 1.10.1

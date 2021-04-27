@@ -7,15 +7,14 @@
 
 #import "MainTabBarController.h"
 #import "EntryRoomController.h"
-#import "ClassroomNavigationController.h"
 #import "SettingMainController.h"
+#import "ClassViewController.h"
 
 @interface MainTabBarController ()
 @property (nonatomic, strong) UIWindow *classroomWindow;
-@property (nonatomic, strong) ClassroomNavigationController *nav1;
-@property (nonatomic, strong) UIViewController *vc2;
+@property (nonatomic, strong) UINavigationController *nav1;
+@property (nonatomic, strong) UINavigationController *nav2;
 @property (nonatomic, strong) UINavigationController *nav3;
-@property (nonatomic, strong) SettingMainController *vc3;
 @end
 
 @implementation MainTabBarController
@@ -29,28 +28,29 @@
 
 // MARK:UI
 - (void)setUI{
-    self.viewControllers = @[self.nav1,self.vc2,self.nav3];
+    self.viewControllers = @[self.nav1,self.nav2,self.nav3];
     self.tabBar.tintColor = UIColor.blackColor;
 }
 
 // MARK:lazy
-- (ClassroomNavigationController *)nav1 {
+- (UINavigationController *)nav1 {
     if (!_nav1) {
-        _nav1 = [[ClassroomNavigationController alloc] initWithRootViewController:[[EntryRoomController alloc]init]];
-        _nav1.tabBarItem.image = [UIImage imageNamed:@"Main_class"];
+        _nav1 = [[UINavigationController alloc] initWithRootViewController:[[EntryRoomController alloc]init]];
+        _nav1.tabBarItem.image = [UIImage imageNamed:@"Classroom_tabIcon"];
         _nav1.tabBarItem.title = @"上课";
     }
     return _nav1;
 }
 
-- (UIViewController *)vc2{
-    if (!_vc2) {
-        _vc2 = [[UIViewController alloc]init];
-        _vc2.tabBarItem.image = [UIImage imageNamed:@"Main_student"];
-        _vc2.tabBarItem.title = @"学生";
+- (UINavigationController *)nav2 {
+    if (!_nav2) {
+        _nav2 = [[UINavigationController alloc] initWithRootViewController:[[ClassViewController alloc]init]];
+        _nav2.tabBarItem.image = [UIImage imageNamed:@"Replay_tabIcon"];
+        _nav2.tabBarItem.title = @"课程";
     }
-    return _vc2;
+    return _nav2;
 }
+
 - (UINavigationController *)nav3{
     if (!_nav3) {
         _nav3 = [[UINavigationController alloc]initWithRootViewController:[[SettingMainController alloc]init]];

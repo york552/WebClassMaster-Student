@@ -101,6 +101,7 @@
     [gameScore saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
         [waitToast hideAnimated:YES];
         [self getToastString:@"提交成功，感谢您的反馈"];
+        [self.navigationController popViewControllerAnimated:YES];
     }];
 }
 

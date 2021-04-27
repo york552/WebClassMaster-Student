@@ -14,17 +14,14 @@
 
 @interface EntryRoomController ()<AgoraEduClassroomDelegate, AgoraEduReplayDelegate>
 @property (nonatomic, strong) UIButton *enterButtom;
-//@property (nonatomic, strong) UIWindow *classWindow;
 @property (nonatomic, strong) MBProgressHUD* toastView;//弹出提示
-//@property (nonatomic, strong) SchduleClassConfiguration *schduleClassModel;
-//@property (nonatomic, strong) ClassroomModel *classModel;
 @end
 
 @implementation EntryRoomController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    AgoraEduSDKConfig *defaultConfig = [[AgoraEduSDKConfig alloc] initWithAppId:@"7299681c2f0241299b87edbb6ed63750" eyeCare:NO];
+    AgoraEduSDKConfig *defaultConfig = [[AgoraEduSDKConfig alloc] initWithAppId:@"7299681c2f0241299b87edbb6ed63750" eyeCare:[[NSUserDefaults standardUserDefaults] boolForKey:@"EYE_PROTECT_STATUS"]];
     [AgoraEduSDK setConfig:defaultConfig];
     [self setUI];
 }
@@ -59,10 +56,7 @@
     UIImageView *backgroundImage = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"Classroom_bg"]];
     self.view.backgroundColor = UIColor.whiteColor;
     [self.view addSubview:self.enterButtom];
-//    [self.view addSubview:self.roomNum];
-//    [self.view addSubview:self.userName];
     [self.view addSubview:backgroundImage];
-
     [self.enterButtom mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(UIScreen.mainScreen.bounds.size.width - 80, 40));
         make.bottom.equalTo(self.view.mas_bottom).offset(-90);
@@ -107,7 +101,7 @@
 
 - (void)enterRoom {
     NSLog(@"进入教室");
-    [self launchClassroom:@"yuankai" userUuid:@"yuankai2" roomName:@"qwe1" roomUuid:@"qwe1" roomType:AgoraEduRoomTypeSmall token:@"0067299681c2f0241299b87edbb6ed63750IAA5PyJ0qFhsRkdlAZV77nT2inXeeEZmq7iXu4QjkL02+fbvHVQAAAAAEAAsuWEFfIeBYAEA6AMMRIBg"];
+    [self launchClassroom:@"yuankai" userUuid:@"yk2" roomName:@"qwe1" roomUuid:@"qwe1" roomType:AgoraEduRoomTypeSmall token:@"0067299681c2f0241299b87edbb6ed63750IAD7LSXclBJ3hKfCAfxfZSx3dzfECphNnyjqExqGRs3HRyFpv+oAAAAAEABbnRTnXLOHYAEA6ANcs4dg"];
 }
 
 - (void)launchClassroom:(NSString *)userName userUuid:(NSString *)userUuid roomName:(NSString *)roomName roomUuid:(NSString *)roomUuid roomType:(AgoraEduRoomType)roomType token:(NSString *)token {

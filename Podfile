@@ -9,12 +9,14 @@ target 'WebClassMaster-Student' do
   
   pod 'LxTabBarController', '~> 1.0.0'
   pod 'MBProgressHUD', '~> 1.2.0'
-  pod 'AgoraEduSDK'
+  pod 'AgoraEduSDK', '1.0.1'
   pod 'Masonry'
   pod 'AFNetworking'
   pod 'YYModel'
   pod 'YYKit'
   pod 'BmobSDK'
+  pod 'JXCategoryView'
+  pod 'JXPagingView/Pager'
   pod 'LookinServer', :configurations => ['Debug']
   
 end
