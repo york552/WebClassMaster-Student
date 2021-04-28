@@ -37,6 +37,7 @@ PODS:
     - CocoaLumberjack/Core (= 3.6.1)
   - CocoaLumberjack/Core (3.6.1)
   - dsBridge (3.0.6)
+  - HWDownSelectedView (1.0.1)
   - JXCategoryView (1.5.8)
   - JXPagingView/Pager (2.0.13)
   - LookinServer (1.0.0)
@@ -72,6 +73,7 @@ DEPENDENCIES:
   - AFNetworking
   - AgoraEduSDK (= 1.0.1)
   - BmobSDK
+  - HWDownSelectedView
   - JXCategoryView
   - JXPagingView/Pager
   - LookinServer
@@ -91,6 +93,7 @@ SPEC REPOS:
     - BmobSDK
     - CocoaLumberjack
     - dsBridge
+    - HWDownSelectedView
     - JXCategoryView
     - JXPagingView
     - LookinServer
@@ -110,6 +113,7 @@ SPEC CHECKSUMS:
   BmobSDK: 930525437e6602f7146108e11a9796604a1edbb9
   CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
   dsBridge: 48b62ee8a411ad601a88d6f6c8cf6cb634b206b7
+  HWDownSelectedView: 950a2d2e5b0e5d9538b33873c3badf642e461b86
   JXCategoryView: 778a620f76070d6598fd8d7239991b8da8326170
   JXPagingView: 821ed274f09eaf2843a96c3a74e9d138e27d9730
   LookinServer: 0002891cd3cec5e082a910e897dfe71b4f06b89e
@@ -120,6 +124,6 @@ SPEC CHECKSUMS:
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 7fa0989d4b83e62a964117c152eb66dac5986add
+PODFILE CHECKSUM: 5866a29aa8b83860a2b2e5d9b53146cf9e496d77
 
 COCOAPODS: 1.10.1

@@ -29,6 +29,8 @@
 		CF4AE4C62632F19600FC3C11 /* ClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4AE4C52632F19600FC3C11 /* ClassViewController.m */; };
 		CF4AE68C263558CE00FC3C11 /* ChooseClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4AE68B263558CE00FC3C11 /* ChooseClassViewController.m */; };
 		CF4AE690263558DF00FC3C11 /* ClassInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4AE68F263558DF00FC3C11 /* ClassInfoViewController.m */; };
+		CFAEA2422637ED0A003FB412 /* HWDownSelectedView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFAEA2412637ED0A003FB412 /* HWDownSelectedView.m */; };
+		CFAEA2472637EF83003FB412 /* arrow_up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFAEA2462637EF83003FB412 /* arrow_up@2x.png */; };
 		EB2AFAD2CF53E4C90974D724 /* Pods_WebClassMaster_Student.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE851784C7FFB95AF06D377 /* Pods_WebClassMaster_Student.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +79,9 @@
 		CF4AE68B263558CE00FC3C11 /* ChooseClassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseClassViewController.m; sourceTree = "<group>"; };
 		CF4AE68E263558DF00FC3C11 /* ClassInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassInfoViewController.h; sourceTree = "<group>"; };
 		CF4AE68F263558DF00FC3C11 /* ClassInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassInfoViewController.m; sourceTree = "<group>"; };
+		CFAEA2402637ED0A003FB412 /* HWDownSelectedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWDownSelectedView.h; sourceTree = "<group>"; };
+		CFAEA2412637ED0A003FB412 /* HWDownSelectedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWDownSelectedView.m; sourceTree = "<group>"; };
+		CFAEA2462637EF83003FB412 /* arrow_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_up@2x.png"; sourceTree = "<group>"; };
 		DDE851784C7FFB95AF06D377 /* Pods_WebClassMaster_Student.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebClassMaster_Student.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -143,6 +148,7 @@
 		CF4AE3B026301FCF00FC3C11 /* Classroom */ = {
 			isa = PBXGroup;
 			children = (
+				CFAEA23A2637ECE5003FB412 /* View */,
 				CF4AE3B126301FCF00FC3C11 /* Controller */,
 				CF4AE3B626301FCF00FC3C11 /* Model */,
 			);
@@ -238,6 +244,24 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		CFAEA23A2637ECE5003FB412 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFAEA2402637ED0A003FB412 /* HWDownSelectedView.h */,
+				CFAEA2412637ED0A003FB412 /* HWDownSelectedView.m */,
+				CFAEA2452637EF83003FB412 /* Resources */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFAEA2452637EF83003FB412 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CFAEA2462637EF83003FB412 /* arrow_up@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		E6DD26D891B3B25E3AD0A1E0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -309,6 +333,7 @@
 				CF4AE38A2630186700FC3C11 /* LaunchScreen.storyboard in Resources */,
 				CF4AE3872630186700FC3C11 /* Assets.xcassets in Resources */,
 				CF4AE3852630186500FC3C11 /* Main.storyboard in Resources */,
+				CFAEA2472637EF83003FB412 /* arrow_up@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +417,7 @@
 				CF4AE37C2630186500FC3C11 /* AppDelegate.m in Sources */,
 				CF4AE68C263558CE00FC3C11 /* ChooseClassViewController.m in Sources */,
 				CF4AE3C02630200F00FC3C11 /* YKTool.m in Sources */,
+				CFAEA2422637ED0A003FB412 /* HWDownSelectedView.m in Sources */,
 				CF4AE3E526315A6600FC3C11 /* UIColor+Hex.m in Sources */,
 				CF4AE3AE263019C100FC3C11 /* MainTabBarController.m in Sources */,
 				CF4AE38D2630186700FC3C11 /* main.m in Sources */,

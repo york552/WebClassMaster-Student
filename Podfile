@@ -17,6 +17,7 @@ target 'WebClassMaster-Student' do
   pod 'BmobSDK'
   pod 'JXCategoryView'
   pod 'JXPagingView/Pager'
+  pod 'HWDownSelectedView'
   pod 'LookinServer', :configurations => ['Debug']
   
 end
