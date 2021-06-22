@@ -11,8 +11,10 @@
 #import <Masonry/Masonry.h>
 #import <AFNetworking/AFNetworking.h>
 #import <MBProgressHUD/MBProgressHUD.h>
-#import <AgoraEduSDK/AgoraEduSDK.h>
-@interface EntryRoomController ()<AgoraEduClassroomDelegate, AgoraEduReplayDelegate, HWDownSelectedViewDelegate>
+#import <AgoraEduSDK/AgoraEduObjects.h>
+#import "HTTPManager.h"
+
+@interface EntryRoomController ()<HWDownSelectedViewDelegate, AgoraEduClassroomDelegate>
 @property (nonatomic, strong) UIButton *enterButtom;
 @property (nonatomic, strong) UITextField *roomNameTextField;
 @property (nonatomic, strong) HWDownSelectedView *roomTypeSelectView;
@@ -26,8 +28,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    AgoraEduSDKConfig *defaultConfig = [[AgoraEduSDKConfig alloc] initWithAppId:@"7299681c2f0241299b87edbb6ed63750" eyeCare:[[NSUserDefaults standardUserDefaults] boolForKey:@"EYE_PROTECT_STATUS"]];
-    [AgoraEduSDK setConfig:defaultConfig];
+    AgoraEduSDKConfig *defaultConfig = [[AgoraEduSDKConfig alloc] initWithAppId:APPID eyeCare:[[NSUserDefaults standardUserDefaults] boolForKey:@"EYE_PROTECT_STATUS"]];
+    [AgoraClassroomSDK setConfig:defaultConfig];
     [self setUI];
 }
 
@@ -60,7 +62,7 @@
     self.navigationController.navigationBar.hidden = YES;
     self.view.backgroundColor = UIColor.whiteColor;
     UIImageView *backgroundImage = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"Classroom_bg"]];
-    UIImageView *roomNameTextFieldIcon = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"icon-roomNameTextField"]];
+    UIImageView *roomNameTextFieldIcon = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"icon-roomname"]];
     UIImageView *roomTypeSelectViewIcon = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"icon-type"]];
     UIView *sperrateName = [[UIView alloc]init];
     UIView *sperrateType = [[UIView alloc]init];
@@ -120,7 +122,20 @@
 }
 
 - (void)enterRoom {
-    [self launchClassroom:@"yuankai" userUuid:@"yk2" roomName:self.roomNameTextField.text roomUuid:self.roomNameTextField.text roomType:self.classType token:@"0067299681c2f0241299b87edbb6ed63750IAD7LSXclBJ3hKfCAfxfZSx3dzfECphNnyjqExqGRs3HRyFpv+oAAAAAEABbnRTnXLOHYAEA6ANcs4dg"];
+    if ([self.roomNameTextField.text isEqualToString:@""]) {
+        [self getToastString:@"请输入房间号"];
+    } else if ([self.roomTypeSelectView.text isEqualToString:@""]) {
+        [self getToastString:@"请选择房间类型"];
+    } else {
+        if ([self.roomTypeSelectView.text isEqualToString:@"一对一"]) {
+            self.classType = AgoraEduRoomType1V1;
+        }else if ([self.roomTypeSelectView.text isEqualToString:@"小班课"]) {
+            self.classType = AgoraEduRoomTypeSmall;
+        }else if ([self.roomTypeSelectView.text isEqualToString:@"大班课"]) {
+            self.classType = AgoraEduRoomTypeLecture;
+        }
+    }
+    [self launchClassroom:@"yuankai" userUuid:@"yk2" roomName:self.roomNameTextField.text roomUuid:self.roomNameTextField.text roomType:self.classType token:RTMTOKEN];
 }
 
 //MARK:-lazy
@@ -172,9 +187,8 @@
 
 //MARK:-net
 - (void)launchClassroom:(NSString *)userName userUuid:(NSString *)userUuid roomName:(NSString *)roomName roomUuid:(NSString *)roomUuid roomType:(AgoraEduRoomType)roomType token:(NSString *)token {
-
-    AgoraEduLaunchConfig *config = [[AgoraEduLaunchConfig alloc] initWithUserName:userName userUuid:userUuid roleType:AgoraEduRoleTypeStudent roomName:roomName roomUuid:roomUuid roomType:roomType token:token];
-    [AgoraEduSDK launch:config delegate:self];
+    AgoraEduLaunchConfig *config = [[AgoraEduLaunchConfig alloc]initWithUserName:userName userUuid:userUuid roleType:AgoraEduRoleTypeStudent roomName:roomName roomUuid:roomUuid roomType:roomType token:token startTime:[NSNumber numberWithDouble:[[NSDate date] timeIntervalSince1970]*1000] duration:[NSNumber numberWithInt:1800] boardRegion:@"cn-hz" userProperties:@{@"myName":@"Letty"}];
+    [AgoraClassroomSDK launch:config delegate:self];
 }
 
 -(void)getToastString:(NSString*)str{
@@ -187,7 +201,8 @@
     };
 }
 
+
 - (void)downSelectedView:(HWDownSelectedView *)selectedView didSelectedAtIndex:(NSIndexPath *)indexPath {
-    NSLog(@"!!!");
 }
+
 @end

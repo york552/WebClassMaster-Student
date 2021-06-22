@@ -14,22 +14,24 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - AgoraEduSDK (1.0.1):
+  - AgoraClassroomSDK (1.1.2):
     - AFNetworking (= 4.0.1)
-    - AgoraEduSDK/AgoraALL (= 1.0.1)
-    - AgoraRtcEngine_iOS (= 2.9.0.107)
+    - AgoraClassroomSDK/All (= 1.1.2)
+    - AgoraRtcEngine_Special_iOS (= 2.9.107.136)
     - AgoraRtm_iOS (= 1.4.1)
     - AliyunOSSiOS (= 2.10.8)
     - CocoaLumberjack (= 3.6.1)
-    - Whiteboard (= 2.9.14)
-  - AgoraEduSDK/AgoraALL (1.0.1):
+    - Protobuf
+    - Whiteboard (= 2.12.26)
+  - AgoraClassroomSDK/All (1.1.2):
     - AFNetworking (= 4.0.1)
-    - AgoraRtcEngine_iOS (= 2.9.0.107)
+    - AgoraRtcEngine_Special_iOS (= 2.9.107.136)
     - AgoraRtm_iOS (= 1.4.1)
     - AliyunOSSiOS (= 2.10.8)
     - CocoaLumberjack (= 3.6.1)
-    - Whiteboard (= 2.9.14)
-  - AgoraRtcEngine_iOS (2.9.0.107)
+    - Protobuf
+    - Whiteboard (= 2.12.26)
+  - AgoraRtcEngine_Special_iOS (2.9.107.136)
   - AgoraRtm_iOS (1.4.1)
   - AliyunOSSiOS (2.10.8)
   - BmobSDK (2.4.1)
@@ -44,25 +46,29 @@ PODS:
   - LxTabBarController (1.0.0)
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
-  - Whiteboard (2.9.14):
-    - Whiteboard/Base (= 2.9.14)
-    - Whiteboard/Converter (= 2.9.14)
-    - Whiteboard/NativeReplayer (= 2.9.14)
-    - Whiteboard/Object (= 2.9.14)
-    - Whiteboard/Replayer (= 2.9.14)
-    - Whiteboard/Room (= 2.9.14)
-  - Whiteboard/Base (2.9.14):
+  - Protobuf (3.17.0)
+  - Whiteboard (2.12.26):
+    - Whiteboard/Base (= 2.12.26)
+    - Whiteboard/Converter (= 2.12.26)
+    - Whiteboard/Model (= 2.12.26)
+    - Whiteboard/NativeReplayer (= 2.12.26)
+    - Whiteboard/Object (= 2.12.26)
+    - Whiteboard/Replayer (= 2.12.26)
+    - Whiteboard/Room (= 2.12.26)
+  - Whiteboard/Base (2.12.26):
     - dsBridge (~> 3.0.2)
     - Whiteboard/Object
-  - Whiteboard/Converter (2.9.14):
+  - Whiteboard/Converter (2.12.26):
     - Whiteboard/Object
-  - Whiteboard/NativeReplayer (2.9.14):
-    - Whiteboard/Replayer
-  - Whiteboard/Object (2.9.14):
+  - Whiteboard/Model (2.12.26):
     - YYModel (~> 1.0.4)
-  - Whiteboard/Replayer (2.9.14):
+  - Whiteboard/NativeReplayer (2.12.26):
+    - Whiteboard/Replayer
+  - Whiteboard/Object (2.12.26):
+    - Whiteboard/Model
+  - Whiteboard/Replayer (2.12.26):
     - Whiteboard/Base
-  - Whiteboard/Room (2.9.14):
+  - Whiteboard/Room (2.12.26):
     - Whiteboard/Base
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
@@ -71,7 +77,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
-  - AgoraEduSDK (= 1.0.1)
+  - AgoraClassroomSDK
   - BmobSDK
   - HWDownSelectedView
   - JXCategoryView
@@ -86,8 +92,8 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
-    - AgoraEduSDK
-    - AgoraRtcEngine_iOS
+    - AgoraClassroomSDK
+    - AgoraRtcEngine_Special_iOS
     - AgoraRtm_iOS
     - AliyunOSSiOS
     - BmobSDK
@@ -100,14 +106,15 @@ SPEC REPOS:
     - LxTabBarController
     - Masonry
     - MBProgressHUD
+    - Protobuf
     - Whiteboard
     - YYKit
     - YYModel
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  AgoraEduSDK: 9166d4e77855d7938a780c13f3bd76066ba61f86
-  AgoraRtcEngine_iOS: f295cc362f18a98a59464c7485a1de1dad4847f2
+  AgoraClassroomSDK: c90f60d87fd0341c2cf20edc904260096f0d8041
+  AgoraRtcEngine_Special_iOS: aa7e013823edefd3b6c5d50f55ae8dcb07b20e63
   AgoraRtm_iOS: 3a5b675487b39e51f416e8c8a040f97f0aaad2c1
   AliyunOSSiOS: 8db92936545593b9e5c66d680ef2ac0738946651
   BmobSDK: 930525437e6602f7146108e11a9796604a1edbb9
@@ -120,10 +127,11 @@ SPEC CHECKSUMS:
   LxTabBarController: 47773fa57189cb83835c119cc7a82c112565f33b
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  Whiteboard: edbe3ed753dc9a457a38718834d7bf16fdfd3980
+  Protobuf: 7327d4444215b5f18e560a97f879ff5503c4581c
+  Whiteboard: 458c79b91097d14159f9bf9c37a1148eb5496063
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 5866a29aa8b83860a2b2e5d9b53146cf9e496d77
+PODFILE CHECKSUM: d5d0380a1a8034e30805ba9e9dc77f7a8bb27a95
 
 COCOAPODS: 1.10.1

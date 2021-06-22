@@ -15,7 +15,6 @@
 		CF4AE38D2630186700FC3C11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4AE38C2630186700FC3C11 /* main.m */; };
 		CF4AE3AE263019C100FC3C11 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4AE3AD263019C100FC3C11 /* MainTabBarController.m */; };
 		CF4AE3B926301FCF00FC3C11 /* EntryRoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4AE3B226301FCF00FC3C11 /* EntryRoomController.m */; };
-		CF4AE3BA26301FCF00FC3C11 /* ClassRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4AE3B326301FCF00FC3C11 /* ClassRoomViewController.m */; };
 		CF4AE3BB26301FCF00FC3C11 /* ClassroomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4AE3B826301FCF00FC3C11 /* ClassroomModel.m */; };
 		CF4AE3C02630200F00FC3C11 /* YKTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4AE3BF2630200F00FC3C11 /* YKTool.m */; };
 		CF4AE3E02631598200FC3C11 /* SettingMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4AE3DF2631598200FC3C11 /* SettingMainController.m */; };
@@ -29,8 +28,12 @@
 		CF4AE4C62632F19600FC3C11 /* ClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4AE4C52632F19600FC3C11 /* ClassViewController.m */; };
 		CF4AE68C263558CE00FC3C11 /* ChooseClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4AE68B263558CE00FC3C11 /* ChooseClassViewController.m */; };
 		CF4AE690263558DF00FC3C11 /* ClassInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4AE68F263558DF00FC3C11 /* ClassInfoViewController.m */; };
+		CF58BB5B267D981100B1837F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58BB5A267D981100B1837F /* File.swift */; };
 		CFAEA2422637ED0A003FB412 /* HWDownSelectedView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFAEA2412637ED0A003FB412 /* HWDownSelectedView.m */; };
 		CFAEA2472637EF83003FB412 /* arrow_up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFAEA2462637EF83003FB412 /* arrow_up@2x.png */; };
+		CFBF42F7263A5A660083CBDB /* ClassListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBF42F6263A5A660083CBDB /* ClassListTableViewCell.m */; };
+		CFBF4302263A5C7B0083CBDB /* HTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBF4301263A5C7B0083CBDB /* HTTPManager.m */; };
+		CFBF4309263A61440083CBDB /* ClassReplayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBF4308263A61440083CBDB /* ClassReplayModel.m */; };
 		EB2AFAD2CF53E4C90974D724 /* Pods_WebClassMaster_Student.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE851784C7FFB95AF06D377 /* Pods_WebClassMaster_Student.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,8 +53,6 @@
 		CF4AE3AC263019C100FC3C11 /* MainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
 		CF4AE3AD263019C100FC3C11 /* MainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
 		CF4AE3B226301FCF00FC3C11 /* EntryRoomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryRoomController.m; sourceTree = "<group>"; };
-		CF4AE3B326301FCF00FC3C11 /* ClassRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassRoomViewController.m; sourceTree = "<group>"; };
-		CF4AE3B426301FCF00FC3C11 /* ClassRoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassRoomViewController.h; sourceTree = "<group>"; };
 		CF4AE3B526301FCF00FC3C11 /* EntryRoomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryRoomController.h; sourceTree = "<group>"; };
 		CF4AE3B726301FCF00FC3C11 /* ClassroomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassroomModel.h; sourceTree = "<group>"; };
 		CF4AE3B826301FCF00FC3C11 /* ClassroomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassroomModel.m; sourceTree = "<group>"; };
@@ -79,9 +80,17 @@
 		CF4AE68B263558CE00FC3C11 /* ChooseClassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseClassViewController.m; sourceTree = "<group>"; };
 		CF4AE68E263558DF00FC3C11 /* ClassInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassInfoViewController.h; sourceTree = "<group>"; };
 		CF4AE68F263558DF00FC3C11 /* ClassInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassInfoViewController.m; sourceTree = "<group>"; };
+		CF58BB59267D981100B1837F /* WebClassMaster-Student-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebClassMaster-Student-Bridging-Header.h"; sourceTree = "<group>"; };
+		CF58BB5A267D981100B1837F /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		CFAEA2402637ED0A003FB412 /* HWDownSelectedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWDownSelectedView.h; sourceTree = "<group>"; };
 		CFAEA2412637ED0A003FB412 /* HWDownSelectedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWDownSelectedView.m; sourceTree = "<group>"; };
 		CFAEA2462637EF83003FB412 /* arrow_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_up@2x.png"; sourceTree = "<group>"; };
+		CFBF42F5263A5A660083CBDB /* ClassListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassListTableViewCell.h; sourceTree = "<group>"; };
+		CFBF42F6263A5A660083CBDB /* ClassListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassListTableViewCell.m; sourceTree = "<group>"; };
+		CFBF4300263A5C7B0083CBDB /* HTTPManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPManager.h; sourceTree = "<group>"; };
+		CFBF4301263A5C7B0083CBDB /* HTTPManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPManager.m; sourceTree = "<group>"; };
+		CFBF4307263A61440083CBDB /* ClassReplayModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassReplayModel.h; sourceTree = "<group>"; };
+		CFBF4308263A61440083CBDB /* ClassReplayModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassReplayModel.m; sourceTree = "<group>"; };
 		DDE851784C7FFB95AF06D377 /* Pods_WebClassMaster_Student.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebClassMaster_Student.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				CF4AE3792630186500FC3C11 /* WebClassMaster-Student */,
+				CFBF42FA263A5B9C0083CBDB /* Service */,
 				CF4AE3782630186500FC3C11 /* Products */,
 				E6DD26D891B3B25E3AD0A1E0 /* Pods */,
 				8049FD2370F78202C3D50D44 /* Frameworks */,
@@ -141,6 +151,8 @@
 				CF4AE38C2630186700FC3C11 /* main.m */,
 				CF4AE3AC263019C100FC3C11 /* MainTabBarController.h */,
 				CF4AE3AD263019C100FC3C11 /* MainTabBarController.m */,
+				CF58BB5A267D981100B1837F /* File.swift */,
+				CF58BB59267D981100B1837F /* WebClassMaster-Student-Bridging-Header.h */,
 			);
 			path = "WebClassMaster-Student";
 			sourceTree = "<group>";
@@ -160,8 +172,6 @@
 			children = (
 				CF4AE3B526301FCF00FC3C11 /* EntryRoomController.h */,
 				CF4AE3B226301FCF00FC3C11 /* EntryRoomController.m */,
-				CF4AE3B426301FCF00FC3C11 /* ClassRoomViewController.h */,
-				CF4AE3B326301FCF00FC3C11 /* ClassRoomViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -226,6 +236,8 @@
 		CF4AE4C32632F07800FC3C11 /* Replay */ = {
 			isa = PBXGroup;
 			children = (
+				CFBF4306263A61320083CBDB /* Model */,
+				CFBF42F4263A5A470083CBDB /* View */,
 				CF4AE4C92632F1A300FC3C11 /* Controller */,
 			);
 			path = Replay;
@@ -260,6 +272,33 @@
 				CFAEA2462637EF83003FB412 /* arrow_up@2x.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CFBF42F4263A5A470083CBDB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFBF42F5263A5A660083CBDB /* ClassListTableViewCell.h */,
+				CFBF42F6263A5A660083CBDB /* ClassListTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFBF42FA263A5B9C0083CBDB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CFBF4300263A5C7B0083CBDB /* HTTPManager.h */,
+				CFBF4301263A5C7B0083CBDB /* HTTPManager.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CFBF4306263A61320083CBDB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CFBF4307263A61440083CBDB /* ClassReplayModel.h */,
+				CFBF4308263A61440083CBDB /* ClassReplayModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		E6DD26D891B3B25E3AD0A1E0 /* Pods */ = {
@@ -304,6 +343,7 @@
 				TargetAttributes = {
 					CF4AE3762630186500FC3C11 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -409,17 +449,20 @@
 				CF4AE3EE2631A07000FC3C11 /* AdviceViewController.m in Sources */,
 				CF4AE3B926301FCF00FC3C11 /* EntryRoomController.m in Sources */,
 				CF4AE4242632C2C800FC3C11 /* MineDetailTableViewCell.m in Sources */,
+				CF58BB5B267D981100B1837F /* File.swift in Sources */,
 				CF4AE40526327C1E00FC3C11 /* ChangePasswordViewController.m in Sources */,
 				CF4AE3BB26301FCF00FC3C11 /* ClassroomModel.m in Sources */,
-				CF4AE3BA26301FCF00FC3C11 /* ClassRoomViewController.m in Sources */,
 				CF4AE3E92631766900FC3C11 /* EyesProtectViewCell.m in Sources */,
 				CF4AE4C62632F19600FC3C11 /* ClassViewController.m in Sources */,
 				CF4AE37C2630186500FC3C11 /* AppDelegate.m in Sources */,
 				CF4AE68C263558CE00FC3C11 /* ChooseClassViewController.m in Sources */,
 				CF4AE3C02630200F00FC3C11 /* YKTool.m in Sources */,
+				CFBF4309263A61440083CBDB /* ClassReplayModel.m in Sources */,
 				CFAEA2422637ED0A003FB412 /* HWDownSelectedView.m in Sources */,
 				CF4AE3E526315A6600FC3C11 /* UIColor+Hex.m in Sources */,
 				CF4AE3AE263019C100FC3C11 /* MainTabBarController.m in Sources */,
+				CFBF4302263A5C7B0083CBDB /* HTTPManager.m in Sources */,
+				CFBF42F7263A5A660083CBDB /* ClassListTableViewCell.m in Sources */,
 				CF4AE38D2630186700FC3C11 /* main.m in Sources */,
 				CF4AE690263558DF00FC3C11 /* ClassInfoViewController.m in Sources */,
 				CF4AE4092632A64200FC3C11 /* LoginViewController.m in Sources */,
@@ -566,6 +609,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5S23RF65HV;
 				INFOPLIST_FILE = "WebClassMaster-Student/Info.plist";
@@ -576,6 +620,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "york.---";
 				PRODUCT_NAME = "网课通";
+				SWIFT_OBJC_BRIDGING_HEADER = "WebClassMaster-Student/WebClassMaster-Student-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -586,6 +633,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5S23RF65HV;
 				INFOPLIST_FILE = "WebClassMaster-Student/Info.plist";
@@ -596,6 +644,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "york.---";
 				PRODUCT_NAME = "网课通";
+				SWIFT_OBJC_BRIDGING_HEADER = "WebClassMaster-Student/WebClassMaster-Student-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

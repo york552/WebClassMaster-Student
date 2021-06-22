@@ -9,7 +9,7 @@ target 'WebClassMaster-Student' do
   
   pod 'LxTabBarController', '~> 1.0.0'
   pod 'MBProgressHUD', '~> 1.2.0'
-  pod 'AgoraEduSDK', '1.0.1'
+  pod 'AgoraClassroomSDK'
   pod 'Masonry'
   pod 'AFNetworking'
   pod 'YYModel'
